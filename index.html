@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    KODUNUZU BURAYA YAZABILIRSINIZ
-    <script src="index.js"></script>
-</body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <section class="section-center">
+        <!-- form -->
+        <header class="header">
+          <form>
+            <input class="form-input" type="text" placeholder="Search..." />
+          </form>
+          <h3 id="user">Mahir Yoldaş GAZELOĞLU</h3>
+        </header>
+      </section>
+      <!-- list -->
+      <main>
+        <div id="container">
+          <article id="500" class="card">
+            <h5>Item 1</h5>
+            <i>icon</i>
+          </article>
+          <article class="card">
+            <h5>Item 1</h5>
+            <i>icon</i>
+          </article>
+          <article class="card">
+            <h5>Item 1</h5>
+            <i>icon</i>
+          </article>
+        </div>
+      </main>
+    </div>
+    <div id="loading">
+      <h1>Loading...</h1>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+  </body>
 </html>
